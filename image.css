@@ -1,0 +1,30 @@
+.image-grid div {
+    width: 25%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .image01 { background-image: url('img/june1.jpeg'); }
+  .image02 { background-image: url('img/june2.jpeg'); }
+  .image03 { background-image: url('img/june3.jpeg'); }
+  .image04 { background-image: url('img/june4.jpeg'); }
+  .image05 { background-image: url('img/june5.jpeg'); }
+  .image06 { background-image: url('img/june6.jpeg'); }
+  .image07 { background-image: url('img/june7.jpeg'); }
+  .image08 { background-image: url('img/june8.jpeg'); }
+  
+
+  @media screen and (max-width: 400px) {
+    .image-grid {
+      flex-direction: column;
+      flex-wrap: no-wrap;
+    }
+    .image-grid div { width: 100%; }
+  }
